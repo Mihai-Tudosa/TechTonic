@@ -8,7 +8,7 @@
 
 html,
 body {
-  overflow: hidden;
+  overflow: auto;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -31,7 +31,7 @@ body {
 .navbar-container {
   display: flex;
   justify-content: center;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 50px;
   z-index: 1000;
@@ -55,15 +55,34 @@ body {
   justify-content: center;
   width: 100%;
   z-index: 1000;
-  position: fixed;
+  position: absolute;
   top: 300px;
 }
 
-.content {
+#content {
   background-color: rgba(229, 217, 242, 0.75);
   width: 75%;
   border-radius: 15px;
   padding: 10px 60px;
+  display: flex;
+  height: auto;
+  overflow: auto;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.product-card {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--color-dark);
+  align-self: flex-start;
+}
+
+.product-card img {
+  width: 200px;
 }
 
 #logo-text {
@@ -137,7 +156,7 @@ body {
     margin: 0 auto; /* Centers the navbar */
   }
 
-  .content {
+  #content {
     width: 90%;
     padding: 10px 20px;
     margin: 0 auto; /* Centers the content */
@@ -168,7 +187,7 @@ body {
     margin: 0 auto; /* Centers the navbar */
   }
 
-  .content {
+  #content {
     width: 90%;
     padding: 10px;
     margin: 0 auto; /* Centers the content */

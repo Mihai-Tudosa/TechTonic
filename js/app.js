@@ -12,15 +12,18 @@ function showAllProducts() {
     .then((response) => response.json())
     .then(
       (products) =>
-        (document.getElementById("content").innerHTML = products.map(
-          (product) => `
-        <div class="product-card">
+        (document.getElementById(
+          "content"
+        ).innerHTML = `<div class="product-card-container">${products
+          .map(
+            (product) => `
+          <div class="product-card">
             <h3>${product.name}</h3>
             <img src=${product.imageURL} />
             <p>${product.details}</p>
-            <p class = "price">${product.price} RON </p>
-        </div>
-        `
-        ))
+            <p class="price">${product.price} RON</p>
+          </div>`
+          )
+          .join("")}</div>`)
     );
 }

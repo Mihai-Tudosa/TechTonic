@@ -18,6 +18,7 @@ function showAllProducts() {
           .map(
             (product) => `
           <div class="product-card">
+            <div class="circle"></div>
             <h3>${product.name}</h3>
             <img src=${product.imageURL} />
             <p>${product.details}</p>

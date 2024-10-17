@@ -59,7 +59,7 @@ body {
   top: 300px;
 }
 
-#content {
+#content-small-container {
   background-color: rgba(229, 217, 242, 0.75);
   width: 75%;
   border-radius: 15px;
@@ -68,6 +68,42 @@ body {
   flex-wrap: wrap;
   align-items: start;
   justify-content: center;
+}
+
+#content {
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+}
+
+#navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-light);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 30px;
+  padding: 5px;
+  font-weight: 500;
+  color: var(--color-very-dark);
+}
+
+.sort-dropdown {
+  display: flex;
+  align-items: right;
+  font-size: 20px;
+}
+
+label {
+  margin-right: 10px;
 }
 
 .product-card-container {
@@ -82,10 +118,43 @@ body {
   padding: 10px;
   margin: 10px;
   background-color: var(--color-dark);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-very-dark);
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.product-card .price {
+  align-items: flex-end;
 }
 
 .product-card img {
   width: 200px;
+}
+
+.product-card h3 {
+  font-size: 25px;
+}
+
+.product-card .circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  translate: -50px -70px;
+  border-radius: 50%;
+  background-color: white;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+
+.product-card:hover .circle {
+  width: 1000px;
+  height: 1000px;
+  border-radius: 5%;
 }
 
 #logo-text {
@@ -156,18 +225,18 @@ body {
   .navbar {
     width: 90%;
     padding: 10px 20px;
-    margin: 0 auto; /* Centers the navbar */
+    margin: 0 auto;
   }
 
   #content {
     width: 90%;
     padding: 10px 20px;
-    margin: 0 auto; /* Centers the content */
+    margin: 0 auto;
   }
 
   .nav-links {
     display: flex;
-    justify-content: space-between; /* Adds space between nav links */
+    justify-content: space-between;
   }
 
   #logo-text {
@@ -181,6 +250,9 @@ body {
   .nav-button {
     font-size: 30px;
   }
+  .title {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -190,10 +262,10 @@ body {
     margin: 0 auto; /* Centers the navbar */
   }
 
-  #content {
+  #content-small-container {
     width: 90%;
     padding: 10px;
-    margin: 0 auto; /* Centers the content */
+    margin: 0; /* Centers the content */
   }
 
   .nav-links {
@@ -211,5 +283,19 @@ body {
 
   .nav-button {
     font-size: 20px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  #navbar-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
   }
 }

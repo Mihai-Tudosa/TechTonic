@@ -128,3 +128,66 @@ body {
 .transparent {
   opacity: 75%;
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 90%;
+    padding: 10px 20px;
+    margin: 0 auto; /* Centers the navbar */
+  }
+
+  .content {
+    width: 90%;
+    padding: 10px 20px;
+    margin: 0 auto; /* Centers the content */
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between; /* Adds space between nav links */
+  }
+
+  #logo-text {
+    font-size: 40px;
+  }
+
+  #logo-image {
+    width: 100px;
+  }
+
+  .nav-button {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto; /* Centers the navbar */
+  }
+
+  .content {
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto; /* Centers the content */
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-between; /* Adds space between nav links */
+  }
+
+  #logo-text {
+    font-size: 30px;
+  }
+
+  #logo-image {
+    width: 80px;
+  }
+
+  .nav-button {
+    font-size: 20px;
+  }
+}

@@ -21,8 +21,13 @@ function showAllProducts() {
             <div class="circle"></div>
             <h3>${product.name}</h3>
             <img src=${product.imageURL} />
-            <p>${product.details}</p>
-            <p class="price">${product.price} RON</p>
+            <!-- <p>${product.details}</p> -->
+            <div class="price-and-cart">
+              <p class="price">${product.price} RON</p>
+              <div class="details"><a href="details.html"><span class="material-symbols-outlined">
+open_in_new
+</span></a></div>
+            </div>
           </div>`
           )
           .join("")}</div>`)

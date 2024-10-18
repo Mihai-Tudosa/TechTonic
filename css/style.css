@@ -109,8 +109,16 @@ label {
 .product-card-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   width: 100%;
+}
+
+.product-card-container::after {
+  content: "";
+  /* flex: auto; */
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .product-card {

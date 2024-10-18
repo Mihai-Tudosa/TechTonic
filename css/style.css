@@ -101,6 +101,7 @@ body {
 }
 
 .title {
+  font-family: "Work Sans";
   font-size: 30px;
   padding: 5px;
   font-weight: 500;
@@ -113,8 +114,9 @@ body {
   font-size: 20px;
 }
 
-label {
+#navbar-content label {
   margin-right: 10px;
+  font-size: 15px;
 }
 
 .product-card-container {
@@ -303,6 +305,7 @@ label {
     width: 90%;
     padding: 10px 20px;
     margin: 0;
+    margin-bottom: 150px;
   }
 
   .nav-links {
@@ -350,6 +353,7 @@ label {
     width: 85%;
     padding: 10px;
     margin: 0;
+    margin-bottom: 150px;
   }
 
   .nav-links {
@@ -370,7 +374,7 @@ label {
   }
 
   .title {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .navbar {

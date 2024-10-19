@@ -87,6 +87,97 @@ body {
   justify-content: center;
 }
 
+#content-table {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto;
+}
+
+.table-header {
+  margin: 15px;
+  font-weight: 650;
+  font-size: 16px;
+  grid-row: 1;
+  height: 40px;
+  background-color: var(--color-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: -3px 3px 0 0 rgba(235, 211, 248, 1),
+    -6px 6px 0 0 rgba(173, 73, 225, 0.6), -9px 9px 0 0 rgba(122, 28, 172, 0.4),
+    -12px 12px 0 0 rgba(46, 7, 63, 0.2), -15px 15px 0 0 rgba(46, 7, 63, 0.1);
+  color: var(--color-very-dark);
+}
+
+.grid-one-column {
+  grid-column: span 1;
+}
+
+.grid-six-column {
+  grid-column: span 6;
+}
+
+.grid-ten-column {
+  grid-column: span 10;
+}
+
+.product-table-header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.product-table-header span {
+  font-weight: 600;
+}
+
+.product-line {
+  display: contents;
+}
+.product-line img {
+  width: 65px;
+  height: 65px;
+  align-self: center;
+  justify-self: center;
+}
+
+.line-item {
+  align-self: center;
+  height: 50px;
+}
+
+#content-table > div:nth-child(even) > .line-item {
+  background-color: var(--color-very-light);
+  border: 2px solid var(--color-very-dark);
+}
+#content-table > div:nth-child(odd) > .line-item {
+  background-color: var(--color-very-light);
+  border: 2px solid var(--color-very-dark);
+}
+
+.trash-can {
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.price,
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
 #navbar-content {
   display: flex;
   align-items: center;

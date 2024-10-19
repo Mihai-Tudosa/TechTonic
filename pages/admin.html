@@ -3,21 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
     <title>TechTonic</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+      }
+    </style>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <video autoplay muted loop id="bg-video">
+    <video autoplay muted playsinline loop id="bg-video">
       <source src="../images/background.mp4" type="video/mp4" />
     </video>
     <div id="container">
@@ -25,34 +31,51 @@
         <div class="navbar flex-row justify-between items-center">
           <div class="logo flex-row items-center">
             <a href="../index.html"
-              ><img src="../images/logo.png" alt="TechTonic Logo" id="image-logo"
+              ><img
+                src="../images/logo.png"
+                alt="TechTonic Logo"
+                id="logo-image"
             /></a>
-            <h1 id="text-logo">TechTonic</h1>
+            <h1 id="logo-text">TechTonic</h1>
           </div>
           <div class="nav-links">
             <a href="admin.html"
               ><span
-                class="nav-button material-symbols-outlined color-dark padding-20"
-              >
-                manage_accounts
-              </span></a
+                class="nav-button material-symbols-outlined text-color-dark padding-20"
+                >manage_accounts</span
+              ></a
             >
             <a href="cart.html"
               ><span
-                class="nav-button material-symbols-outlined color-dark padding-20"
-              >
-                shopping_cart
-              </span></a
+                class="nav-button material-symbols-outlined text-color-dark padding-20"
+                >shopping_cart</span
+              ></a
             >
           </div>
         </div>
       </div>
       <div class="content-container">
-        <div class="content">
-          <H1>ADMIN</H1>
+        <div id="content-small-container">
+          <div id="navbar-content">
+            <div class="title">Gestionare Produse</div>
+            <div class="sort-dropdown">
+              <label for="sort-options">Sortează după:</label>
+              <select id="sort-options">
+                <option value="noi">Noi</option>
+                <option value="priceAsc">Preț Crescător</option>
+                <option value="priceDesc">Preț Descrescător</option>
+                <option value="qtyAsc">Cantitate Crescător</option>
+                <option value="qtyDesc">Cantitate Descrescător</option>
+                <option value="nameAsc">Nume (A-Z)</option>
+                <option value="nameDesc">Nume (Z-A)</option>
+              </select>
+            </div>
+          </div>
+          <div id="content-table"></div>
+        </div>
       </div>
     </div>
-    <script src="../js/app.js"></script>
+    <script src="../js/admin.js"></script>
   </body>
 </html>
 

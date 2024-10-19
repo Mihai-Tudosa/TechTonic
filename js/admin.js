@@ -37,7 +37,7 @@ function getSortProducts(e) {
       document.getElementById("content-table").innerHTML = `
         <span class="table-header th-img grid-one-column">Imagine</span>
         <span class="table-header th-name grid-six-column">Nume</span>
-        <span class="table-header th-Price grid-one-column">Preț</span>
+        <span class="table-header th-price grid-one-column">Preț</span>
         <span class="table-header th-quantity grid-one-column"
               >Cantitate</span
             >
@@ -46,7 +46,7 @@ function getSortProducts(e) {
         .map(
           (product) => `
           <div class = "line-item product-line grid-ten-column">
-            <img class = "line-item grid-one-column" src=${product.imageURL} />
+            <img class = "line-item product-image grid-one-column" src=${product.imageURL} />
             <h3 class = "line-item name grid-six-column" >${product.name}</h3>
             <p class="line-item price grid-one-column">${product.price} RON</p>
             <p class="line-item quantity grid-one-column">${product.quantity}</p>

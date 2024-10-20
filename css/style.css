@@ -82,7 +82,8 @@ body {
 
 #button-add-product,
 #button-update-product,
-#button-cancel {
+#button-cancel,
+.cart-add {
   box-shadow: -5px 5px 0 0 rgba(235, 211, 248, 1),
     -10px 10px 0 0 rgba(122, 28, 172, 0.4);
   border-radius: 15px;
@@ -100,7 +101,8 @@ body {
 
 #button-add-product:hover,
 #button-update-product:hover,
-#button-cancel:hover {
+#button-cancel:hover,
+.cart-add:hover {
   box-shadow: -5px 5px 0 0 rgba(122, 28, 172, 0.4);
   border-radius: 15px;
   color: var(--color-very-dark);
@@ -110,6 +112,13 @@ body {
   translate: -5px 5px;
   cursor: pointer;
   grid-column: span 3;
+}
+
+#button-add-to-cart {
+  background-color: var(--color-very-dark);
+  color: white;
+  width: 90%;
+  align-self: center;
 }
 
 #content-table > label {
@@ -411,11 +420,59 @@ select#sort-options option {
 .single-item-details {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+
+.details-card div {
+  padding: 15px;
 }
 
 .details-card {
   background-color: white;
   width: 40%;
+  align-items: flex-start;
+}
+
+.details-card > .name {
+  font-size: 30px;
+  font-family: "Poppins";
+  font-weight: 700;
+}
+
+.details-card > .price {
+  font-weight: 600;
+}
+
+.details-card > .details {
+  align-self: flex-start;
+}
+
+.big-image {
+  display: flex;
+  justify-content: center;
+}
+
+.big-image > img {
+  width: 300px;
+  height: 300px;
+  margin: 0px;
+}
+
+.qty-select > label {
+  grid-column: span 1;
+}
+
+.qty-select > input {
+  grid-column: span 6;
+  border-radius: 7px;
+  border: 1px solid var(--color-light);
+  margin: 15px;
+  width: 40px;
+  height: 30px;
+}
+#item-container > div.big-image.product-card.details-card > img {
+  align-self: center;
+  justify-self: center;
 }
 
 .flex-row {
@@ -537,6 +594,15 @@ select#sort-options option {
     height: 85px;
     width: 85px;
   }
+  #item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .details-card {
+    width: 80%;
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -641,5 +707,14 @@ select#sort-options option {
   .product-line img {
     height: 85px;
     width: 85px;
+  }
+  #item-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .details-card {
+    width: 80%;
+    align-self: center;
   }
 }

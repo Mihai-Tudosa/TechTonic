@@ -81,6 +81,7 @@ body {
 }
 
 #button-add-product,
+#button-update-product,
 #button-cancel {
   box-shadow: -5px 5px 0 0 rgba(235, 211, 248, 1),
     -10px 10px 0 0 rgba(122, 28, 172, 0.4);
@@ -98,6 +99,7 @@ body {
 }
 
 #button-add-product:hover,
+#button-update-product:hover,
 #button-cancel:hover {
   box-shadow: -5px 5px 0 0 rgba(122, 28, 172, 0.4);
   border-radius: 15px;

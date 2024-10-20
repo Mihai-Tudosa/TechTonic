@@ -10,6 +10,12 @@ window.onload = function () {
 const sortOptionsDropDown = document.getElementById(`sort-options`);
 sortOptionsDropDown.addEventListener(`change`, getSortProducts);
 
+//Gestionare Produse Event Listener
+const gestionareProduse = document.getElementById(`title`);
+gestionareProduse.addEventListener(`click`, () =>
+  getSortProducts({ target: { value: "noi" } })
+);
+
 //Get and Sort Products Function
 
 function getSortProducts(e) {
@@ -58,4 +64,80 @@ delete
         )
         .join("")}`;
     });
+}
+
+//AddProduct Event Listener
+const addProduct = document.getElementById(`add-product`);
+addProduct.addEventListener(`click`, showAddProductForm);
+
+//Function that shows the add product form
+
+function showAddProductForm() {
+  document.getElementById("content-table").innerHTML = `
+
+  <div></div>
+  <label for="image-url">Image URL</label>
+  <div></div>
+  <input type="text" id="image-url" name="image-url">
+  <div></div>
+
+  <div></div>
+  <label for="name">Name</label>
+  <div></div>
+  <input type="text" id="name" name="name">
+  <div></div>
+
+  <div></div>
+  <label for="description">Description</label>
+  <div></div>
+  <input type="text" id="description" name="description">
+  <div></div>
+
+  <div></div>
+  <label for="price">Price</label>
+  <div></div>
+  <input type="number" id="price" name="price">
+  <div></div>
+
+  <div></div>
+  <label for="quantity">Quantity</label>
+  <div></div>
+  <input type="number" id="quantity" name="quantity">
+  <div></div>
+  
+  <div class="grid-filler"></div>
+  <div id="button-add-product">Salvează</div>
+  <div class="grid-filler"></div>
+  <div class="grid-filler"></div>
+  <div id="button-cancel">Anulare</div>
+  <div class="grid-filler"></div>
+  `;
+
+  const postNewProduct = document.getElementById("button-add-product");
+  if (postNewProduct) {
+    postNewProduct.addEventListener("click", addNewProductInDatabase);
+  }
+}
+
+//Post New Product (Save) Event Listener
+// const postNewProduct = document.getElementById(`button-add-product`);
+// postNewProduct.addEventListener(`click`, addNewProductInDatabase);
+
+function addNewProductInDatabase() {
+  const newProduct = {
+    name: document.getElementById(`name`).value,
+    details: document.getElementById(`description`).value,
+    price: document.getElementById(`price`).value,
+    quantity: document.getElementById(`quantity`).value,
+    imageURL: document.getElementById(`image-url`).value,
+  };
+
+  fetch(URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(newProduct),
+  })
+    .then((response) => response.json())
+    .then((newProduct) => console.log(`Succesful entry`, newProduct))
+    .catch((error) => console.error(`Error:`, error));
 }

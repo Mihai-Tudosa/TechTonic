@@ -403,6 +403,21 @@ select#sort-options option {
   width: 150px;
 }
 
+#item-container {
+  display: flex;
+  justify-content: center;
+}
+
+.single-item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-card {
+  background-color: white;
+  width: 40%;
+}
+
 .flex-row {
   display: flex;
 }

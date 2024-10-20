@@ -41,7 +41,7 @@ function getSortProducts(e) {
             <!-- <p>${product.details}</p> -->
             <div class="price-and-cart">
               <p class="price">${product.price} RON</p>
-              <div class="details"><a href="details.html?id=${product.id}"><span class="material-symbols-outlined">
+              <div class="details"><a href="pages/details.html?id=${product.id}"><span class="material-symbols-outlined">
 open_in_new
 </span></a></div>
             </div>

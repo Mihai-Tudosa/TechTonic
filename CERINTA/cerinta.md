@@ -1,15 +1,3 @@
-# TechTonic
-
----
-
-## Despre Proiect:
-
-### Acesta este un site de e-commerce care vinde componente de calculatoare.
-
-### Acest site este proiectul final pentru cursul de Web Front End Development DigitalStack.
-
-## Cerință proiect:
-
 Creati 4 pagini html, in care sa includeti elemente de javascript si css (fisiere separate), care sa implementeze functionalitatile necesare unei aplicatii de genul magazin electronic (folositi tehnica AJAX si mapati raspunsul primit de la server pe clase javascript):
 
 - index.html
@@ -17,7 +5,7 @@ Creati 4 pagini html, in care sa includeti elemente de javascript si css (fisier
   - [x] pagina ce afiseaza lista de prodose pe care le primeste de la un server in format JSON
   - [x] cererea catre server se face folosind tehnica AJAX
   - [x] in gif-ul de mai jos, este un exemplu despre cum ar putea arata implementarea acestei pagini
-        [tema_talcioc_index.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/d61754ef-cbb3-49ce-9c08-404845edc44f/a12687f9-70ee-4b12-9155-e55248f213f5/tema_talcioc_index.mp4)
+    [tema_talcioc_index.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/d61754ef-cbb3-49ce-9c08-404845edc44f/a12687f9-70ee-4b12-9155-e55248f213f5/tema_talcioc_index.mp4)
 
 - details.html
 
@@ -26,7 +14,7 @@ Creati 4 pagini html, in care sa includeti elemente de javascript si css (fisier
   - [ ] tot in pagina va fi afisat si un buton "adauga in cos": la apasarea acestui buton, in partea de sus a ecranului, va aparea un mesaj ce va avertiza utilizatorul ca produsul din imagine a fost adaugat in cosul de cumparaturi
   - [ ] toate produsele adaugate in cos vor fi stocate in memoria browserului, folosind functionalitatea localstorage
   - [ ] in gif-ul de mai jos, este un exemplu despre cum ar putea arata implementarea acestei pagini
-        [tema_talcioc_details.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/d61754ef-cbb3-49ce-9c08-404845edc44f/f385fef1-9e83-48b6-9d15-1cfc92bec4c8/tema_talcioc_details.mp4)
+    [tema_talcioc_details.mp4](https://prod-files-secure.s3.us-west-2.amazonaws.com/d61754ef-cbb3-49ce-9c08-404845edc44f/f385fef1-9e83-48b6-9d15-1cfc92bec4c8/tema_talcioc_details.mp4)
 
 - cart.html
 

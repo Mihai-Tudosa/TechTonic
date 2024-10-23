@@ -133,6 +133,12 @@ function showAddProductForm() {
   if (postNewProduct) {
     postNewProduct.addEventListener("click", addNewProductInDatabase);
   }
+
+  //Anulare Event Listener
+  const anulare = document.getElementById(`button-cancel`);
+  anulare.addEventListener(`click`, () =>
+    getSortProducts({ target: { value: "noi" } })
+  );
 }
 
 //Function To Edit Product
@@ -188,14 +194,19 @@ function editProduct(id) {
   <div id="button-cancel">Anulare</div>
   <div class="grid-filler"></div>
   `;
+      //buton de salvat
       const updateProductButton = document.getElementById(
         "button-update-product"
       );
-      if (updateProductButton) {
-        updateProductButton.addEventListener("click", () =>
-          updateProductInDatabase(id)
-        );
-      }
+      updateProductButton.addEventListener("click", () =>
+        updateProductInDatabase(id)
+      );
+
+      //buton de anulat
+      const anulare = document.getElementById(`button-cancel`);
+      anulare.addEventListener(`click`, () =>
+        getSortProducts({ target: { value: "noi" } })
+      );
     })
     .catch((error) => console.error(`Error:`, error));
 

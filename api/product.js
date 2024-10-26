@@ -146,5 +146,9 @@ export function addToCart(itemId, quantity) {
   console.log(localStorage.getItem("cart"));
 }
 
+//Convert Cart To Item
+
+export async function cartToItems() {}
+
 // Expose delete and edit functions to the global scope
 window.deleteProduct = deleteProduct;

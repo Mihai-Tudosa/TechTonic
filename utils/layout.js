@@ -264,3 +264,25 @@ export async function showProduct(id) {
 }
 
 window.editProduct = editProduct;
+
+// Show Cart as Lines
+export function renderCart(products) {
+  products = document.getElementById(
+    "content"
+  ).innerHTML = `<div class="product-card-container">${products
+    .map(
+      (product) => `
+        <div class="product-card">
+          <div class="circle"></div>
+          <h3>${product.name}</h3>
+          <img src=${product.imageURL} />
+          <div class="price-and-cart">
+            <p class="price">${product.price} RON</p>
+            <div class="details"><a href="pages/details.html?id=${product.id}"><span class="material-symbols-outlined">
+open_in_new
+</span></a></div>
+          </div>
+        </div>`
+    )
+    .join("")}</div>`;
+}

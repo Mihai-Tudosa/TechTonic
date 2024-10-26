@@ -126,7 +126,8 @@ body {
   margin: 20px;
 }
 
-#content-table > input {
+#content-table > input,
+#content-table > select {
   grid-column: span 6;
   border-radius: 10px;
   border: 1px solid var(--color-light);
@@ -177,7 +178,7 @@ body {
 }
 
 .table-header {
-  margin: 15px;
+  margin: 15px 15px 35px 15px;
   font-weight: 650;
   font-size: 16px;
   grid-row: 1;
@@ -198,7 +199,7 @@ body {
 }
 
 .grid-six-column {
-  grid-column: span 6;
+  grid-column: span 5;
 }
 
 .grid-ten-column {
@@ -220,31 +221,49 @@ body {
   display: contents;
 }
 .product-line img {
-  width: 65px;
-  height: 65px;
+  width: 75px;
+  height: 75px;
   align-self: center;
   justify-self: center;
 }
 
+.line-item-img {
+  align-self: center;
+  justify-self: center;
+}
+
+#content-table div.line-item.grid-one-column.product-image {
+  background-color: white;
+}
+
 .line-item {
   align-self: center;
-  height: 50px;
+  height: 80px;
   background-color: var(--color-very-light);
   border: 2px solid var(--color-very-dark);
+  border-radius: 5px;
+  margin: 1px;
 }
 
 .trash-can {
   display: flex;
-  margin-right: 20px;
   justify-content: center;
   align-items: center;
 }
 
 .price,
-.quantity {
+.quantity,
+.category {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.details {
+  padding: 5px;
+  margin-bottom: 20px;
+  color: var(--color-very-dark);
+  /* border-top: none; */
 }
 
 .name {
@@ -252,6 +271,9 @@ body {
   justify-content: left;
   align-items: center;
   padding-left: 20px;
+  font-weight: 700;
+  font-family: "Poppins";
+  font-size: 20px;
 }
 
 #navbar-content {
@@ -267,13 +289,15 @@ body {
     -10px 10px 0 0 rgba(173, 73, 225, 0.6);
 }
 
-.sort-dropdown {
+.sort-dropdown,
+.category-dropdown {
   display: flex;
   align-items: right;
   font-size: 20px;
 }
 
-label[for="sort-options"] {
+label[for="sort-options"],
+label[for="category-options"] {
   font-family: "Work Sans";
   font-size: 30px;
   margin-right: 10px;
@@ -298,6 +322,29 @@ select#sort-options:focus {
 }
 
 select#sort-options option {
+  font-weight: 400;
+}
+
+select#category,
+select#category-options {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+select#category:focus,
+select#category-options:focus {
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+select#category option,
+select#category-options option {
   font-weight: 400;
 }
 

@@ -5,7 +5,8 @@
     "price": "2100",
     "quantity": "484",
     "imageURL": "https://5.grgs.ro/images/products/1/9561/2594135/normal/ryzen-7-7800x3d-42ghz-box-c828e4f5427046cab3fef92871454224.jpg",
-    "id": "1"
+    "id": "1",
+    "category": "Procesor"
   },
   {
     "name": "i9 14900KF",
@@ -13,7 +14,8 @@
     "price": "2434",
     "quantity": "23",
     "imageURL": "https://2.grgs.ro/images/products/1/4468/2694487/normal/raptor-lake-refresh-core-i9-14900kf-32ghz-box-549df39917f19d193d22345e69a48beb.jpg",
-    "id": "2"
+    "id": "2",
+    "category": "Procesor"
   },
   {
     "name": "MSI GeForce RTX 4090",
@@ -21,7 +23,8 @@
     "price": "11499",
     "quantity": "21",
     "imageURL": "https://4.grgs.ro/images/products/1/7002/2856519/full/geforce-rtx-4090-gaming-x-slim-24g-24gb-gddr6x-2x-hdmi-2x-dp-9494f61a1e60dbd0809e4c80aae3fc28.jpg",
-    "id": "3"
+    "id": "3",
+    "category": "Placă Video"
   },
   {
     "name": "RX 7900 XT",
@@ -29,7 +32,8 @@
     "price": "5999",
     "quantity": "255",
     "imageURL": "https://3.grgs.ro/images/products/1/2998/2520903/full/rx-7900xt-speedster-merc-20gb-gddr6-cb7e42e91e104c2ca9f93375827200d3.jpg",
-    "id": "4"
+    "id": "4",
+    "category": "Placă Video"
   },
   {
     "name": "990 EVO 2TB",
@@ -37,7 +41,8 @@
     "price": "749",
     "quantity": "591",
     "imageURL": "https://5.grgs.ro/images/products/1/9268/2938347/full/samsung-ssd-990-evo-2tb-m2-nvme-pcie-a6a65f721c5d0f4a7bc198d91fcf2abf.jpg",
-    "id": "5"
+    "id": "5",
+    "category": "SSD"
   },
   {
     "name": "Seasonic VERTEX GX-1000",
@@ -45,7 +50,8 @@
     "price": "1189",
     "quantity": "796",
     "imageURL": "https://4.grgs.ro/images/products/1/2428/2893463/normal/vertex-gx-1000-80-plus-gold-1000w-12vhpwr-full-modulara-alb-ae8a99e4df943b88d245dba399a70819.jpg",
-    "id": "6"
+    "id": "6",
+    "category": "Sursă"
   },
   {
     "name": "ASUS ROG STRIX X870-F",
@@ -53,7 +59,8 @@
     "price": "2279",
     "quantity": "262",
     "imageURL": "https://3.grgs.ro/images/products/1/6162/3097303/normal/rog-strix-x870-f-gaming-d8724d32c0fb1baabb7b5c75ce6a8015.jpg",
-    "id": "7"
+    "id": "7",
+    "category": "Placă de Bază"
   },
   {
     "name": "GIGABYTE Z790",
@@ -61,7 +68,8 @@
     "price": "1289",
     "quantity": "117",
     "imageURL": "https://1.grgs.ro/images/products/1/6654/2686811/normal/z790-aorus-elite-ax-ice-dd1a799b94816af909a8dd84f70aeda9.png",
-    "id": "8"
+    "id": "8",
+    "category": "Placă de Bază"
   },
   {
     "name": "Seagate BarraCuda 2TB",
@@ -69,7 +77,8 @@
     "price": "307",
     "quantity": "79",
     "imageURL": "https://5.grgs.ro/images/products/1/8674/1726212/normal/barracuda-2tb-sata-iii-7200rpm-256mb-f0e26ccfd1ea1e7806dacb552cf6a1d9.jpg",
-    "id": "9"
+    "id": "9",
+    "category": "HDD"
   },
   {
     "name": "WD Blue 2TB",
@@ -77,7 +86,8 @@
     "price": "306",
     "quantity": "979",
     "imageURL": "https://5.grgs.ro/images/products/1/7201/2159282/normal/blue-2tb-sata-iii-7200-rpm-256mb-12f8684658fc32ab893ce619cb99de01.jpg",
-    "id": "10"
+    "id": "10",
+    "category": "HDD"
   },
   {
     "name": "Corsair 4000D",
@@ -85,7 +95,8 @@
     "price": "498.99",
     "quantity": "172",
     "imageURL": "https://2.grgs.ro/images/products/1/6769/2110666/normal/4000d-airflow-white-da97514f6ed277953ab9f8bb9338a859.jpg",
-    "id": "11"
+    "id": "11",
+    "category": "Carcasă"
   },
   {
     "name": "Ryzen 9 9950X",
@@ -93,6 +104,7 @@
     "price": "3349.99",
     "quantity": "343",
     "imageURL": "https://5.grgs.ro/images/products/1/858/3071783/normal/ryzen-9-9950x-16c-32t-430-570ghz-boxed-54226c48c206e09e0c8bc6bb26ab7d51.jpg",
-    "id": "12"
+    "id": "12",
+    "category": "Procesor"
   }
 ]

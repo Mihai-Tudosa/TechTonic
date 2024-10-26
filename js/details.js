@@ -1,5 +1,6 @@
 // Import necessary functions from product.js
-import { getProducts, showProduct, addToCart } from "../api/product.js";
+import {} from "../api/product.js";
+import { showProduct } from "../utils/layout.js";
 
 // URL query parameter to variable
 const queryString = window.location.search;

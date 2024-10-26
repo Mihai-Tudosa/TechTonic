@@ -1,11 +1,7 @@
 //Import product functions
 
-import {
-  getProducts,
-  sortProducts,
-  renderProductTable,
-  showAddProductForm,
-} from "../api/product.js";
+import { getProducts, sortProducts } from "../api/product.js";
+import { renderProductTable, showAddProductForm } from "../utils/layout.js";
 
 // Set Default Sort
 window.onload = async function () {

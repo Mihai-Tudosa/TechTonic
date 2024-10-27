@@ -24,12 +24,24 @@ export function renderProductTable(products) {
     .map(
       (product) => `
       <div class="line-item product-line grid-ten-column">
-        <div class="line-item grid-one-column product-image"><img class="line-item-img flex-row" src=${product.imageURL} /></div>
-        <div class="line-item name grid-six-column"><a href="#" onclick="editProduct(event, ${product.id})">${product.name}</a></div>
-        <div class="line-item category grid-one-column">${product.category}</div>
-        <div class="line-item price grid-one-column">${product.price} RON</div>
-        <div class="line-item quantity grid-one-column">${product.quantity}</div>
-        <div class="line-item trash-can grid-one-column"><a href="#" onclick="deleteProduct(${product.id})"><span class="material-symbols-outlined">
+        <div class="line-item grid-one-column product-image"><img class="line-item-img flex-row" src=${
+          product.imageURL
+        } /></div>
+        <div class="line-item name grid-six-column"><a href="#" onclick="editProduct(event, ${
+          product.id
+        })">${product.name}</a></div>
+        <div class="line-item category grid-one-column">${
+          product.category
+        }</div>
+        <div class="line-item price grid-one-column">${numberWithSpaces(
+          product.price
+        )} RON</div>
+        <div class="line-item quantity grid-one-column">${numberWithSpaces(
+          product.quantity
+        )}</div>
+        <div class="line-item trash-can grid-one-column"><a href="#" onclick="deleteProduct(${
+          product.id
+        })"><span class="material-symbols-outlined">
 delete
 </span></a></div>
         <div class="line-item details grid-ten-column">${product.details}</div>
@@ -51,8 +63,10 @@ export function renderProductCards(products) {
           <h3>${product.name}</h3>
           <img src=${product.imageURL} />
           <div class="price-and-cart">
-            <p class="price">${product.price} RON</p>
-            <div class="details"><a href="pages/details.html?id=${product.id}"><span class="material-symbols-outlined">
+            <p class="price">${numberWithSpaces(product.price)} RON</p>
+            <div class="details"><a href="pages/details.html?id=${
+              product.id
+            }"><span class="material-symbols-outlined">
 open_in_new
 </span></a></div>
           </div>
@@ -236,11 +250,13 @@ export async function showProduct(id) {
 
     if (product) {
       document.getElementById("item-container").innerHTML = `
-        <div class="big-image product-card details-card"><img src=${product.imageURL} /></div>
+        <div class="big-image product-card details-card"><img src=${
+          product.imageURL
+        } /></div>
         <div class="single-item-details product-card details-card">
           <div class="name">${product.name}</div>
           <div class="details">${product.details}</div>
-          <div class="price">Preț: ${product.price} RON</div>
+          <div class="price">Preț: ${numberWithSpaces(product.price)} RON</div>
           <div class="quantity">În stoc: ${product.quantity} bucăți.</div>
           <div class="qty-select">
             <label for="quantity">Cantitate:</label>

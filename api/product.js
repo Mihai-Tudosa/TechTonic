@@ -194,11 +194,11 @@ export async function processCart(cart) {
   return result;
 }
 
-//Stolen functiion to separate numbers
+//Borrowed functiion to separate numbers
 export function numberWithSpaces(x) {
   var parts = x.toString().split(".");
-  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-  return parts.join(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  return parts.join(",");
 }
 // Expose delete and edit functions to the global scope
 window.deleteProduct = deleteProduct;

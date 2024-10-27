@@ -1,6 +1,6 @@
 [
   {
-    "name": "Ryzen 7800X3D",
+    "name": "Ryzen 7 7800X3D",
     "details": "Procesor AMD Ryzen 7 7800X3D 4.2GHz box",
     "price": "2100",
     "quantity": "484",
@@ -9,7 +9,7 @@
     "category": "Procesor"
   },
   {
-    "name": "i9 14900KF",
+    "name": "Intel i9 14900KF",
     "details": "Procesor Intel Raptor Lake Refresh, Core i9 14900KF 3.2GHz box",
     "price": "2434",
     "quantity": "23",
@@ -101,10 +101,334 @@
   {
     "name": "Ryzen 9 9950X",
     "details": "Procesor AMD Ryzen 9 9950X 4.3GHz box",
-    "price": "3349.99",
-    "quantity": "343",
+    "price": "3349.92",
+    "quantity": "342",
     "imageURL": "https://5.grgs.ro/images/products/1/858/3071783/normal/ryzen-9-9950x-16c-32t-430-570ghz-boxed-54226c48c206e09e0c8bc6bb26ab7d51.jpg",
     "id": "12",
     "category": "Procesor"
+  },
+  {
+    "name": "Banane freș",
+    "details": "A se păstra la loc uscat și răcoros, cu temperatură controlată.",
+    "price": "2",
+    "quantity": "144444",
+    "imageURL": "https://cdn.freshful.ro/media/cache/freshful_large/79/d5/8bc0eff65898442ee59eef07d457.jpg",
+    "category": "Placă de Bază",
+    "id": "13"
+  },
+  {
+    "name": "Ryzen 5 7600",
+    "details": "Procesor AMD Ryzen 5 7600 3.8GHz box",
+    "price": "969.99",
+    "quantity": "100",
+    "imageURL": "https://1.grgs.ro/images/products/1/2770/2525875/full/ryzen-5-7600-38ghz-box-8ee27eb0d07d40b424267fed6cbdee20.jpg",
+    "category": "Procesor",
+    "id": "14"
+  },
+  {
+    "name": "Intel i5 12400F",
+    "details": "Procesor Intel Alder Lake, Core i5 12400F 2.5GHz box",
+    "price": "569.99",
+    "quantity": "190",
+    "imageURL": "https://4.grgs.ro/images/products/1/6878/2310274/normal/alder-lake-core-i5-12400f-25ghz-box-4c811b8c3457d904891ee296f772877b.jpg",
+    "category": "Procesor",
+    "id": "15"
+  },
+  {
+    "name": "Intel i7 12700K",
+    "details": "Procesor Intel Alder Lake, Core i7 12700K 3.6GHz box",
+    "price": "1121.16",
+    "quantity": "20",
+    "imageURL": "https://3.grgs.ro/images/products/1/9551/2274658/normal/alder-lake-core-i7-12700k-36ghz-box-1faf1f5304307e29caa3fe5513a85aa2.jpg",
+    "category": "Procesor",
+    "id": "16"
+  },
+  {
+    "name": "Intel i5 14600KF",
+    "details": "Procesor Intel Raptor Lake Refresh, Core i5 14600KF 3.5GHz box",
+    "price": "1175.27",
+    "quantity": "200",
+    "imageURL": "https://3.grgs.ro/images/products/1/4468/2694471/normal/raptor-lake-refresh-core-i5-14600kf-35ghz-box-25967b6f3c13f6b3fc990963124f6374.jpg",
+    "category": "Procesor",
+    "id": "17"
+  },
+  {
+    "name": "Intel i7 14700KF",
+    "details": "Procesor Intel Raptor Lake Refresh, Core i7 14700KF 3.4GHz box",
+    "price": "1829.99",
+    "quantity": "50",
+    "imageURL": "https://4.grgs.ro/images/products/1/2180/2694479/normal/raptor-lake-refresh-core-i7-14700kf-34ghz-box-f7f5608ef4d48dd5adf411ed77ee5aa3.jpg",
+    "category": "Procesor",
+    "id": "18"
+  },
+  {
+    "name": "Ryzen 7 5700X3D",
+    "details": "Procesor AMD Ryzen 7 5700X3D 3.0GHz box",
+    "price": "1125.99",
+    "quantity": "192",
+    "imageURL": "https://1.grgs.ro/images/products/1/9268/2871951/normal/ryzen-7-5700x3d-30ghz-box-93a08cae2dabca2f184dd05938d842e9.jpg",
+    "category": "Procesor",
+    "id": "19"
+  },
+  {
+    "name": "Ryzen 5 5600",
+    "details": "Procesor AMD Ryzen 5 5600 3.5GHz box",
+    "price": "609.99",
+    "quantity": "1234",
+    "imageURL": "https://2.grgs.ro/images/products/1/9507/2355156/normal/ryzen-5-5600x-37ghz-box-26bda6b8149dc7ed1e485e0ced910275.jpg",
+    "category": "Procesor",
+    "id": "20"
+  },
+  {
+    "name": " Ryzen 7 5700X",
+    "details": "Procesor AMD Ryzen 7 5700X 3.4GHz box",
+    "price": "809.99",
+    "quantity": "573",
+    "imageURL": "https://5.grgs.ro/images/products/1/9544/2355140/normal/ryzen-7-5700x-34ghz-box-2687b131aac464ac3b611bf2f02d6725.jpg",
+    "category": "Procesor",
+    "id": "21"
+  },
+  {
+    "name": "Intel i7 14700K",
+    "details": "Procesor Intel Raptor Lake Refresh, Core i7 14700K 3.4GHz box",
+    "price": "1969.99",
+    "quantity": "900",
+    "imageURL": "https://3.grgs.ro/images/products/1/2180/2694475/normal/cpu-core-i7-14700k-s1700-box-34g-bx8071514700k-s-rn3x-in-db96249fec8b72bef32e81f0a80aea1e.jpg",
+    "category": "Procesor",
+    "id": "22"
+  },
+  {
+    "name": "Ryzen 5 5500",
+    "details": "Procesor AMD Ryzen 5 5500 3.6GHz box",
+    "price": "379.99",
+    "quantity": "2",
+    "imageURL": "https://3.grgs.ro/images/products/1/9507/2355160/normal/ryzen-5-5600x-37ghz-box-26bda6b8149dc7ed1e485e0ced910275.jpg",
+    "category": "Procesor",
+    "id": "23"
+  },
+  {
+    "name": "Intel i5 14400F",
+    "details": "Procesor Intel Raptor Lake Refresh, Core i5 14400F 2.5GHz box",
+    "price": "859.99",
+    "quantity": "50",
+    "imageURL": "https://5.grgs.ro/images/products/1/390/2882671/normal/raptor-lake-refresh-core-i5-14400f-25ghz-box-83583e532213e931440a2ae73363a199.jpg",
+    "category": "Procesor",
+    "id": "24"
+  },
+  {
+    "name": "Intel i9 14900K",
+    "details": "Procesor Intel Raptor Lake Refresh, Core i9 14900K 3.2GHz box",
+    "price": "2499.99",
+    "quantity": "101",
+    "imageURL": "https://1.grgs.ro/images/products/1/4468/2694483/normal/raptor-lake-refresh-core-i9-14900k-32ghz-box-c903e9c8261c4be45b8f8033bb6ff6e6.jpg",
+    "category": "Procesor",
+    "id": "26"
+  },
+  {
+    "name": "Ryzen 7 7700X",
+    "details": "Procesor AMD Ryzen 7 7700X 4.5GHz box",
+    "price": "1709.99",
+    "quantity": "4",
+    "imageURL": "https://3.grgs.ro/images/products/1/2770/2451328/normal/ryzen-7-7700x-45ghz-box-2e0a7fcf7a7cc46aac8fecc80705f5f6.jpg",
+    "category": "Procesor",
+    "id": "27"
+  },
+  {
+    "name": "XFX Radeon RX 6750 XT",
+    "details": "Placa video XFX Radeon RX 6750 XT Core Gaming 12GB GDDR6 1‎92-bit",
+    "price": "1719.99",
+    "quantity": "159",
+    "imageURL": "https://3.grgs.ro/images/products/1/2331/2973119/normal/rx-675tmbaf9-4424c74f7aef158beacfb93afb207fac.jpg",
+    "category": "Placă Video",
+    "id": "28"
+  },
+  {
+    "name": "GIGABYTE GeForce RTX 4070 SUPER",
+    "details": "Placa video GIGABYTE GeForce RTX 4070 SUPER Windforce OC 12GB GDDR6X 192-bit DLSS 3.0",
+    "price": "3399.99",
+    "quantity": "5234",
+    "imageURL": "https://5.grgs.ro/images/products/1/2428/2894075/normal/geforce-rtx-4070-super-windforce-oc-12g-12gb-gddr6x-hdmi-3x-dp-489f90136915abdd9c1e7b37f098853a.jpg",
+    "category": "Placă Video",
+    "id": "29"
+  },
+  {
+    "name": " GIGABYTE GeForce RTX 4060 ",
+    "details": "Placa video GIGABYTE GeForce RTX 4060 EAGLE OC 8GB GDDR6 128-bit DLSS 3.0",
+    "price": "1659.99",
+    "quantity": "2352",
+    "imageURL": "https://5.grgs.ro/images/products/1/5071/2638927/normal/geforce-rtx-4060-eagle-oc-8g-gddr6-8gb-128bit-pci-e-40-x8-1x8-pin-retai-05133d5bd28aacf9bfd3a3758c968088.jpg",
+    "category": "Placă Video",
+    "id": "30"
+  },
+  {
+    "name": " GIGABYTE GeForce RTX 3060 OC LHR",
+    "details": "Placa video GIGABYTE GeForce RTX 3060 GAMING OC LHR 12GB GDDR6 192-bit",
+    "price": "1619.99",
+    "quantity": "3204",
+    "imageURL": "https://5.grgs.ro/images/products/1/5113/2220154/normal/geforce-rtx-3060-gaming-oc-lhr-12gb-gddr6-192-bit-4bff0e23e9cf2534f5b39714a4804205.jpg",
+    "category": "Placă Video",
+    "id": "31"
+  },
+  {
+    "name": "PowerColor Radeon RX 6600",
+    "details": "Placa video PowerColor Radeon RX 6600 Fighter 8GB GDDR6 1‎28-bit",
+    "price": "1046.39",
+    "quantity": "235",
+    "imageURL": "https://4.grgs.ro/images/products/1/9551/2281090/normal/radeon-rx-6600-fighter-8gb-gddr6-128-bit-a5db907ec791a399c2c5252e28eebb6d.jpg",
+    "category": "Placă Video",
+    "id": "32"
+  },
+  {
+    "name": "GIGABYTE GeForce RTX 4060 WINDFORCE OC",
+    "details": "Placa video GIGABYTE GeForce RTX 4060 WINDFORCE OC 8GB GDDR6 128-bit DLSS 3.0",
+    "price": "1599.99",
+    "quantity": "56",
+    "imageURL": "https://2.grgs.ro/images/products/1/5071/2638935/normal/nvidia-geforce-rtx-4060-windforce-oc-8g-gddr6-8gb-128bit-pci-e-40-x8-1x8-pin-retail-10ebfd8be9901282e4ea680e716564d0.jpg",
+    "category": "Placă Video",
+    "id": "33"
+  },
+  {
+    "name": "Gainward GeForce RTX 4070",
+    "details": "Placa video Gainward GeForce RTX 4070 GHOST 12GB GDDR6X 192-bit DLSS 3.0",
+    "price": "2921.25",
+    "quantity": "118",
+    "imageURL": "https://1.grgs.ro/images/products/1/7288/2812975/normal/gainward-geforce-rtx-4070-ghost-12g-d9d0dac5a40e2e5458dc1a2559113074.jpg",
+    "category": "Placă Video",
+    "id": "34"
+  },
+  {
+    "name": "Sapphire Radeon RX 7600",
+    "details": "Placa video Sapphire Radeon RX 7600 Pulse 8GB GDDR6 1‎28-bit",
+    "price": "1362.32",
+    "quantity": "3425",
+    "imageURL": "https://1.grgs.ro/images/products/1/3002/2626147/normal/radeon-rx-7600-pulse-8gb-b5f4cc5dd89e52ce304e93930064de3d.jpg",
+    "category": "Placă Video",
+    "id": "35"
+  },
+  {
+    "name": "PowerColor Radeon RX 7800 XT ",
+    "details": "Placa video PowerColor Radeon RX 7800 XT Hellhound Sakura Limited Edition 16GB GDDR6 256-bit",
+    "price": "3024.32",
+    "quantity": "2398",
+    "imageURL": "https://1.grgs.ro/images/products/1/6229/3101919/normal/pw-hellhound-amd-radeon-rx7800-xt-16gb-s-b21d2351cfb2c0d28605fc93f1564cbb.jpg",
+    "category": "Placă Video",
+    "id": "36"
+  },
+  {
+    "name": "Sapphire Radeon RX 6600",
+    "details": "Placa video Sapphire Radeon RX 6600 PULSE 8GB GDDR6 128-bit",
+    "price": "1266.59",
+    "quantity": "24",
+    "imageURL": "https://3.grgs.ro/images/products/1/9551/2281078/normal/radeon-rx-6600-pulse-8gb-gddr6-128-bit-7ad80441b89e3a62789062af62afd2a7.jpg",
+    "category": "Placă Video",
+    "id": "37"
+  },
+  {
+    "name": "Kingston NV3 1TB M.2",
+    "details": "SSD Kingston NV3 1TB PCI Express 4.0 x4 M.2 2280",
+    "price": "329.88",
+    "quantity": "21",
+    "imageURL": "https://2.grgs.ro/images/products/1/858/3070951/normal/nv3-1tb-pci-express-40-x4-m2-2280-faba219cd17d838e553f31fe7d169504.jpg",
+    "category": "SSD",
+    "id": "38"
+  },
+  {
+    "name": " Kingston NV2 1TB M.2",
+    "details": "SSD Kingston NV2 1TB PCI Express 4.0 x4 M.2 2280",
+    "price": "266.98",
+    "quantity": "4",
+    "imageURL": "https://5.grgs.ro/images/products/1/2770/2456276/normal/kingston-1000gb-nv2-m2-2280-pcie-40-nvme-ssd-a2813322d8256cf289a01b95193824db.jpg",
+    "category": "SSD",
+    "id": "39"
+  },
+  {
+    "name": "Samsung 990 PRO 2TB M.2",
+    "details": "SSD Samsung 990 PRO 2TB PCI Express 4.0 x4 M.2 2280",
+    "price": "859.99",
+    "quantity": "10",
+    "imageURL": "https://5.grgs.ro/images/products/1/7985/2490572/normal/samsung-ssd-990-pro-2tb-m2-nvme-pcie-40-d7d2d3afc308e62385e1dce1740a735f.jpg",
+    "category": "SSD",
+    "id": "40"
+  },
+  {
+    "name": "Lexar NM620 512GB M.2",
+    "details": "SSD Lexar NM620 512GB PCI Express 3.0 x4 M.2 2280",
+    "price": "153.44",
+    "quantity": "6",
+    "imageURL": "https://2.grgs.ro/images/products/1/6915/2661579/normal/nm620-2tb-pci-express-30-x4-m2-2280-9d2b9e489f91b123a967592d69bcb70c.jpg",
+    "category": "SSD",
+    "id": "41"
+  },
+  {
+    "name": "Seagate BarraCuda 1TB M.2",
+    "details": "SSD Seagate BarraCuda 1TB PCI Express 4.0 x4 M.2 2280",
+    "price": "273.99",
+    "quantity": "70",
+    "imageURL": "https://2.grgs.ro/images/products/1/4445/2651959/normal/zp250cv3a002-37f98ee154a5136bbb4d1496590944d4.jpg",
+    "category": "SSD",
+    "id": "42"
+  },
+  {
+    "name": "ADATA Ultimate SU650 256GB",
+    "details": "SSD ADATA Ultimate SU650 256GB SATA-III 2.5 inch",
+    "price": "86.99",
+    "quantity": "2356",
+    "imageURL": "https://5.grgs.ro/images/products/1/4468/2177890/normal/ultimate-su650-256gb-sata-iii-25-inch-c23760084d0b325e1d14276861af27de.jpg",
+    "category": "SSD",
+    "id": "43"
+  },
+  {
+    "name": "GIGABYTE AORUS 2TB M.2 ",
+    "details": "SSD GIGABYTE AORUS Gen5 2TB PCI Express 5.0 x4 M.2 2280",
+    "price": "2504.61",
+    "quantity": "431",
+    "imageURL": "https://3.grgs.ro/images/products/1/6767/2608115/normal/ssd-gigabyte-aorus-gen5-2tb-nvme-20-be4a7da42beb78b50f832899e5228455.png",
+    "category": "SSD",
+    "id": "44"
+  },
+  {
+    "name": "Corsair MP600 PRO XT Hydro X Edition 4TB M.2",
+    "details": "SSD Corsair MP600 PRO XT Hydro X Edition 4TB PCI Express 4.0 x4 M.2 2280",
+    "price": "2499.84",
+    "quantity": "2",
+    "imageURL": "https://4.grgs.ro/images/products/1/6878/2308242/normal/mp600-pro-xt-hydro-x-edition-2tb-pci-express-40-x4-m2-2280-2ee94442eeedb3cf61fbde55f46c4902.jpg",
+    "category": "SSD",
+    "id": "45"
+  },
+  {
+    "name": "SanDisk Ultra 3D 4TB",
+    "details": "SSD SanDisk Ultra 3D 4TB SATA-III 2.5 inch",
+    "price": "2415.91",
+    "quantity": "6",
+    "imageURL": "https://5.grgs.ro/images/products/1/6331/2630139/normal/ultra-3d-4tb-sata-iii-25-inch-152475ab64b4cdb20229ebf9e85dcf32.jpg",
+    "category": "SSD",
+    "id": "46"
+  },
+  {
+    "name": " WD Blue M.2",
+    "details": "SSD WD Blue 1TB SATA-III M.2 2280",
+    "price": "1954.58",
+    "quantity": "4",
+    "imageURL": "https://2.grgs.ro/images/products/1/1146523/1417646/normal/blue-500gb-sata-iii-m2-2280-6204dc0dc6f217524a82bf52ec972ebd.jpg",
+    "category": "SSD",
+    "id": "47"
+  },
+  {
+    "name": "WD My Passport Go 2TB",
+    "details": "SSD WD My Passport Go 2TB USB 3.0 Blue",
+    "price": "1989.68",
+    "quantity": "22",
+    "imageURL": "https://2.grgs.ro/images/products/1/6472/2223502/normal/my-passport-go-1tb-usb-30-blue-e098a40cb0ab7d5470a81d2b2d093652.jpg",
+    "category": "SSD",
+    "id": "48"
+  },
+  {
+    "name": " Crucial T700 Heatsink 2TB M.2",
+    "details": "SSD Crucial T700 Heatsink 2TB PCI Express 5.0 x4 M.2 2280",
+    "price": "2073.05",
+    "quantity": "6",
+    "imageURL": "https://3.grgs.ro/images/products/1/8666/2622019/normal/ssd-m2-2280-2tb-t700-w-heats-ct2000t700ssd5-crucial-f83860a7828f2b210dad056f813acc39.jpg",
+    "category": "SSD",
+    "id": "49"
   }
 ]

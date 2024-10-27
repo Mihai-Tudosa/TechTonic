@@ -471,6 +471,9 @@ select#category-options option {
   transition: all 0.4s ease-in-out;
 }
 
+.cart-category-name {
+  width: 300px;
+}
 .cart-img img {
   width: 150px;
 }

@@ -146,9 +146,59 @@ export function addToCart(itemId, quantity) {
   console.log(localStorage.getItem("cart"));
 }
 
-//Convert Cart To Item
+//Fetch one product based on ID
 
-export async function cartToItems() {}
+export async function fetchProductDetails(productId) {
+  try {
+    const response = await fetch(`${URL}/${productId}`);
+    if (!response.ok) {
+      throw new Error(`Network response was not ok`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error(`Error fetching product with ID ${productId}:`, error);
+    return null;
+  }
+}
 
+//Process local cart into img,name,price,qty,pricetotal
+
+export async function processCart(cart) {
+  const result = [];
+
+  for (const item of cart) {
+    const productId = item.id;
+    const quantity = Number(item.quantity);
+
+    // Fetch product details from the API
+    const productDetails = await fetchProductDetails(productId);
+
+    if (productDetails) {
+      const { imageURL, name, price, category } = productDetails;
+      let totalPrice = quantity * price;
+      totalPrice = Math.trunc(totalPrice * Math.pow(10, 2)) / Math.pow(10, 2);
+
+      // Construct the result object
+      result.push({
+        id: productId,
+        image: imageURL,
+        name,
+        price,
+        quantity,
+        category,
+        total_price: totalPrice,
+      });
+    }
+  }
+
+  return result;
+}
+
+//Stolen functiion to separate numbers
+export function numberWithSpaces(x) {
+  var parts = x.toString().split(".");
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  return parts.join(".");
+}
 // Expose delete and edit functions to the global scope
 window.deleteProduct = deleteProduct;

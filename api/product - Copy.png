@@ -153,22 +153,17 @@ export async function changeQtyInCart(itemId, quantity) {
   if (!Array.isArray(cart)) {
     cart = [];
   }
+
   const existingItem = cart.find((item) => item.id === itemId);
   if (existingItem) {
     existingItem.quantity = Number(existingItem.quantity) + Number(quantity);
-    if (existingItem.quantity <= 0) {
-      await deleteFromCart(itemId);
-    } else {
-      localStorage.setItem("cart", JSON.stringify(cart));
-      console.log("Updated cart:", cart);
-      cartToLines(await processCart(cart));
-    }
   } else {
     cart.push({ id: itemId, quantity: quantity });
-    localStorage.setItem("cart", JSON.stringify(cart));
-    console.log("Updated cart:", cart);
-    cartToLines(await processCart(cart));
   }
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  console.log("Updated cart:", cart);
+  cartToLines(await processCart(cart));
 }
 
 //Remove from cart function:

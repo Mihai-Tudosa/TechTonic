@@ -310,13 +310,21 @@ export async function cartToLines(cart) {
           <div class="cart-quantity cart-small-block">
             <div class="cart-quanity-label cart-small-text">Cantitate:</div>
             <div class="container-quantity-buttons flex-row">
-              <button class="button-allunset">
+              <button class="button-allunset ${
+                product.quantity === 1 ? "button-disabled" : ""
+              }" onclick="changeQtyInCart(
+                '${product.id}',
+                -1
+              )" ${product.quantity === 1 ? "disabled" : ""}>
                 <span class="material-symbols-outlined plus-minus-button">arrow_circle_down</span>
               </button>
               <div class="cart-quantity-only cart-big-text">${numberWithSpaces(
                 product.quantity
               )}</div>
-              <button class="button-allunset">
+              <button class="button-allunset" onclick="changeQtyInCart(
+                '${product.id}',
+                1
+              )">
                 <span class="material-symbols-outlined plus-minus-button">arrow_circle_up</span>
               </button>
             </div>

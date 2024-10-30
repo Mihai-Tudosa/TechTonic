@@ -1,4 +1,4 @@
-import { renderProductTable } from "../utils/layout.js";
+import { renderProductTable, cartToLines } from "../utils/layout.js";
 
 // URL
 const URL = `https://670fe588a85f4164ef2c6118.mockapi.io/products`;
@@ -130,20 +130,35 @@ export async function refreshProducts() {
 //Add To Cart function
 
 export function addToCart(itemId, quantity) {
-  let cart;
-  if (localStorage.getItem("cart")) {
-    cart = JSON.parse(localStorage.getItem("cart"));
-  } else {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  if (!Array.isArray(cart)) {
     cart = [];
   }
+
   const existingItem = cart.find((item) => item.id === itemId);
   if (existingItem) {
     existingItem.quantity = Number(existingItem.quantity) + Number(quantity);
   } else {
     cart.push({ id: itemId, quantity: quantity });
   }
+
   localStorage.setItem("cart", JSON.stringify(cart));
-  console.log(localStorage.getItem("cart"));
+  console.log("Updated cart:", cart);
+}
+
+//Remove from cart function:
+
+export async function deleteFromCart(itemId) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  if (!Array.isArray(cart)) {
+    cart = [];
+  }
+  cart = cart.filter(
+    (item) => item.id !== itemId && item.id !== undefined && item.id !== null
+  );
+  localStorage.setItem("cart", JSON.stringify(cart));
+  console.log("Updated cart after deletion:", cart);
+  cartToLines(await processCart(cart));
 }
 
 //Fetch one product based on ID
@@ -196,9 +211,14 @@ export async function processCart(cart) {
 
 //Borrowed functiion to separate numbers
 export function numberWithSpaces(x) {
+  if (x === undefined || x === null) {
+    return "N/A"; // Return a default value if x is undefined or null
+  }
   var parts = x.toString().split(".");
   parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ".");
   return parts.join(",");
 }
+
 // Expose delete and edit functions to the global scope
 window.deleteProduct = deleteProduct;
+window.deleteFromCart = deleteFromCart;

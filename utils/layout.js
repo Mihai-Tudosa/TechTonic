@@ -6,6 +6,7 @@ import {
   refreshProducts,
   updateProductInDatabase,
   numberWithSpaces,
+  deleteFromCart,
 } from "../api/product.js";
 
 // URL
@@ -283,86 +284,60 @@ export async function showProduct(id) {
 //Processed cart to cart lines
 
 export async function cartToLines(cart) {
-  document.getElementById("cart-content").innerHTML = `${cart.map(
-    (product) => `
-    <div class="cart-card" style="background-color: white">
-                <div class="cart-img">
-                  <img
-                    src="${product.image}"
-                    alt="Product Image"
-                  />
-                </div>
-                <div class="cart-category-name cart-small-block">
-                  <div class="cart-category-only cart-small-text">
-                    ${product.category}
-                  </div>
-                  <div class="cart-name-only cart-big-text">
-                    ${product.name}
-                  </div>
-                </div>
-                <div class="cart-item-each-price cart-small-block">
-                  <div class="cart-item-each-price-label cart-small-text">
-                    Preț Individual:
-                  </div>
-                  <div class="cart-item-each-price-only cart-big-text">
-                    ${numberWithSpaces(product.price)}
-                  </div>
-                </div>
-                <div class="cart-quantity cart-small-block">
-                  <div class="cart-quanity-label cart-small-text">
-                    Cantitate:
-                  </div>
-                  <div class="container-quantity-buttons flex-row">
-                    <button class="button-allunset">
-                      <span class="material-symbols-outlined plus-minus-button">
-                        arrow_circle_down
-                      </span>
-                    </button>
-                    <div class="cart-quantity-only cart-big-text">${numberWithSpaces(
-                      product.quantity
-                    )}
-                    </div>
-                    <button class="button-allunset">
-                      <span class="material-symbols-outlined plus-minus-button">
-                        arrow_circle_up
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div class="cart-item-all-price cart-small-block">
-                  <div class="cart-item-all-label cart-small-text">
-                    Preț total:
-                  </div>
-                  <div class="cart-item-all-label cart-big-text">
-                    ${numberWithSpaces(product.total_price)}
-                  </div>
-                </div>
-              </div>`
-  )}`;
-}
-{
+  if (!Array.isArray(cart)) {
+    cart = [];
+  }
+
+  document.getElementById("cart-content").innerHTML = `${cart
+    .map(
+      (product) => `
+        <div class="cart-card" style="background-color: white">
+          <div class="cart-img">
+            <img src="${product.image}" alt="Product Image" />
+          </div>
+          <div class="cart-category-name cart-small-block">
+            <div class="cart-category-only cart-small-text">${
+              product.category
+            }</div>
+            <div class="cart-name-only cart-big-text">${product.name}</div>
+          </div>
+          <div class="cart-item-each-price cart-small-block">
+            <div class="cart-item-each-price-label cart-small-text">Preț Individual:</div>
+            <div class="cart-item-each-price-only cart-big-text">${numberWithSpaces(
+              product.price
+            )}</div>
+          </div>
+          <div class="cart-quantity cart-small-block">
+            <div class="cart-quanity-label cart-small-text">Cantitate:</div>
+            <div class="container-quantity-buttons flex-row">
+              <button class="button-allunset">
+                <span class="material-symbols-outlined plus-minus-button">arrow_circle_down</span>
+              </button>
+              <div class="cart-quantity-only cart-big-text">${numberWithSpaces(
+                product.quantity
+              )}</div>
+              <button class="button-allunset">
+                <span class="material-symbols-outlined plus-minus-button">arrow_circle_up</span>
+              </button>
+            </div>
+          </div>
+          <div class="cart-item-all-price cart-small-block">
+            <div class="cart-item-all-label cart-small-text">Preț total:</div>
+            <div class="cart-item-all-label cart-big-text">${numberWithSpaces(
+              product.total_price
+            )}</div>
+          </div>
+          <div class="cart-item-delete-button-container cart-small-block">
+            <div class="cart-small-text"></div>
+            <div class="cart-delete-button-container">
+              <span class="material-symbols-outlined cart-delete-button" onclick="deleteFromCart('${
+                product.id
+              }')">remove_shopping_cart</span>
+            </div>
+          </div>
+        </div>`
+    )
+    .join("")}`;
 }
 
 window.editProduct = editProduct;
-
-// Show Cart as Lines
-// export function renderCart(products) {
-//   products = document.getElementById(
-//     "content"
-//   ).innerHTML = `<div class="product-card-container">${products
-//     .map(
-//       (product) => `
-//         <div class="product-card">
-//           <div class="circle"></div>
-//           <h3>${product.name}</h3>
-//           <img src=${product.imageURL} />
-//           <div class="price-and-cart">
-//             <p class="price">${product.price} RON</p>
-//             <div class="details"><a href="pages/details.html?id=${product.id}"><span class="material-symbols-outlined">
-// open_in_new
-// </span></a></div>
-//           </div>
-//         </div>`
-//     )
-//     .join("")}</div>`;
-// }

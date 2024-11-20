@@ -7,10 +7,12 @@ import {
   updateProductInDatabase,
   numberWithSpaces,
   deleteFromCart,
+  URL,
 } from "../api/product.js";
 
 // URL
-const URL = `https://670fe588a85f4164ef2c6118.mockapi.io/products`;
+// const URL = `https://670fe588a85f4164ef2c6118.mockapi.io/products`;
+// const URL = `http://localhost:3000/products`;
 
 // Show Products in Admin Table
 export function renderProductTable(products) {
@@ -242,7 +244,7 @@ export async function editProduct(event, id) {
   }
 }
 
-// Show One product function
+// Show one product function
 
 export async function showProduct(id) {
   try {

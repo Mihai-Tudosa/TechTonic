@@ -1,9 +1,9 @@
+import { renderCartSummary } from "../js/cart.js";
 import { renderProductTable, cartToLines } from "../utils/layout.js";
 
 // URL
-const URL = `https://670fe588a85f4164ef2c6118.mockapi.io/products`;
-
-// const URL = `http://192.168.0.61:3000`;
+export const URL = `https://670fe588a85f4164ef2c6118.mockapi.io/products`;
+// const URL = `http://localhost:3000/products`;
 
 // Function to fetch products from the API
 export async function getProducts() {
@@ -163,13 +163,17 @@ export async function changeQtyInCart(itemId, quantity) {
     } else {
       localStorage.setItem("cart", JSON.stringify(cart));
       console.log("Updated cart:", cart);
-      cartToLines(await processCart(cart));
+      const processedCart = await processCart(cart);
+      cartToLines(processedCart);
+      await renderCartSummary();
     }
   } else {
     cart.push({ id: itemId, quantity: quantity });
     localStorage.setItem("cart", JSON.stringify(cart));
     console.log("Updated cart:", cart);
-    cartToLines(await processCart(cart));
+    const processedCart = await processCart(cart);
+    cartToLines(processedCart);
+    await renderCartSummary();
   }
 }
 
@@ -185,7 +189,9 @@ export async function deleteFromCart(itemId) {
   );
   localStorage.setItem("cart", JSON.stringify(cart));
   console.log("Updated cart after deletion:", cart);
-  cartToLines(await processCart(cart));
+  const processedCart = await processCart(cart);
+  cartToLines(processedCart);
+  await renderCartSummary();
 }
 
 //Fetch one product based on ID

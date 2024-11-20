@@ -538,6 +538,34 @@ select#category-options option {
   padding: 5px;
 }
 
+.promo-remove-button-container:hover span {
+  box-shadow: -1px 1px 0 0 rgba(235, 211, 248, 1),
+    -3px 3px 0 0 rgba(173, 73, 225, 0.6);
+  background-color: #ff0000;
+  transform: scale(1.2);
+}
+
+.promo-remove-button-container {
+  all: unset;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.promo-remove-button-container span {
+  box-shadow: -1px 1px 0 0 rgba(235, 211, 248, 1),
+    -2px 2px 0 0 rgba(173, 73, 225, 0.6);
+}
+
+.promo-remove-button {
+  font-size: 1em;
+  color: white;
+  background-color: rgb(255, 87, 87);
+  border-radius: 10%;
+  margin: 0px 5px;
+  padding: 5px;
+}
+
 .cart-total-line {
   display: flex;
   flex-direction: row;

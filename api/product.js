@@ -3,6 +3,8 @@ import { renderProductTable, cartToLines } from "../utils/layout.js";
 // URL
 const URL = `https://670fe588a85f4164ef2c6118.mockapi.io/products`;
 
+// const URL = `http://192.168.0.61:3000`;
+
 // Function to fetch products from the API
 export async function getProducts() {
   try {

@@ -291,7 +291,7 @@ export async function cartToLines(cart) {
   document.getElementById("cart-content").innerHTML = `${cart
     .map(
       (product) => `
-        <div class="cart-card" style="background-color: white">
+        <div class="cart-card">
           <div class="cart-img">
             <img src="${product.image}" alt="Product Image" />
           </div>
@@ -347,5 +347,7 @@ export async function cartToLines(cart) {
     )
     .join("")}`;
 }
+
+//cart
 
 window.editProduct = editProduct;
